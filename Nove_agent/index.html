@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Agent | AI智能体主页</title>
+  <style>
+    :root{--bg:#08111f;--panel:rgba(12,24,44,.78);--line:rgba(136,175,255,.18);--text:#ecf3ff;--muted:#9fb2d1;--brand:#78a9ff;--brand2:#7af0d2;--accent:#ffd56a;--r:22px;--shadow:0 24px 80px rgba(0,0,0,.35)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"Inter","Microsoft YaHei",sans-serif;color:var(--text);background:radial-gradient(circle at 0 0,rgba(120,169,255,.22),transparent 28%),radial-gradient(circle at 100% 0,rgba(122,240,210,.16),transparent 24%),linear-gradient(180deg,#09111e,#060b14)}
+    a{text-decoration:none;color:inherit}.container{width:min(1120px,calc(100% - 32px));margin:0 auto}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);backdrop-filter:blur(16px)}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(6,11,20,.6);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:700}.logo{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#07111f;background:linear-gradient(135deg,var(--brand),var(--brand2))}.links{display:flex;gap:20px;color:var(--muted);font-size:14px}
+    .hero{padding:64px 0 28px}.hero-grid,.contact-grid,.grid3,.grid4,.grid2{display:grid;gap:18px}.hero-grid{grid-template-columns:1.15fr .85fr}.contact-grid{grid-template-columns:1.2fr .8fr}.grid3{grid-template-columns:repeat(3,1fr)}.grid4{grid-template-columns:repeat(4,1fr)}.grid2{grid-template-columns:repeat(2,1fr)}
+    .main{padding:34px}.side{padding:22px;display:grid;gap:16px}.pill{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:999px;font-size:13px;background:rgba(120,169,255,.12);border:1px solid rgba(120,169,255,.18);color:#d8e6ff}
+    h1{margin:18px 0 14px;font-size:clamp(36px,6vw,62px);line-height:1.05} h2{margin:0 0 8px;font-size:28px} h3{margin:14px 0 10px;font-size:20px} p,li{color:var(--muted);line-height:1.75}.muted{color:var(--muted)}
+    .actions,.tags{display:flex;flex-wrap:wrap;gap:12px}.actions{margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;min-width:146px;padding:14px 18px;border-radius:14px;font-weight:600;border:1px solid transparent;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-primary{color:#06101d;background:linear-gradient(135deg,var(--brand),var(--brand2))}.btn-secondary{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
+    .tag{padding:8px 12px;border-radius:999px;font-size:13px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08)}.panel{padding:20px;border-radius:18px;background:linear-gradient(180deg,rgba(16,34,62,.95),rgba(8,18,34,.95));border:1px solid rgba(122,240,210,.12)}
+    .status{display:inline-flex;align-items:center;gap:8px;color:#bdf7e8;font-size:13px}.status:before{content:"";width:8px;height:8px;border-radius:999px;background:#59f2cb;box-shadow:0 0 12px #59f2cb}.stat-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06)}.stat strong{display:block;font-size:24px;margin-bottom:6px}
+    .section{padding:24px 0}.section-head{margin-bottom:18px}.box{padding:24px}.icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(120,169,255,.12);border:1px solid rgba(120,169,255,.18);font-size:20px}.badge{font-size:12px;color:var(--accent);padding:6px 10px;border-radius:999px;background:rgba(255,213,106,.12);border:1px solid rgba(255,213,106,.18)}.case-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.list{margin:0;padding-left:18px}.footer{padding:30px 0 44px;color:var(--muted);text-align:center;font-size:14px}
+    @media (max-width:960px){.hero-grid,.contact-grid,.grid3,.grid4,.grid2{grid-template-columns:1fr}.nav-inner{flex-direction:column;gap:12px}.links{flex-wrap:wrap;justify-content:center}}
+    @media (max-width:640px){.main,.side,.box{padding:20px}.stat-list{grid-template-columns:1fr}h1{font-size:36px}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top"><span class="logo">AI</span><span>Nova Agent</span></a>
+      <nav class="links">
+        <a href="#about">关于我</a><a href="#ability">能力</a><a href="#cases">案例</a><a href="#flow">流程</a><a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <article class="card main">
+          <div class="pill">AI 智能体主页 · 现代单页展示</div>
+          <h1>你好，我是 <span style="color:var(--brand2)">Nova Agent</span><br />你的 AI 产品与自动化伙伴</h1>
+          <p>这是一个适合个人品牌、工作室、顾问、开发者和企业 AI 业务的主页模板。它可以用来展示你的 AI 智能体定位、服务能力、项目案例、合作方式与联系入口。</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">立即联系</a>
+            <a class="btn btn-secondary" href="#cases">查看案例</a>
+          </div>
+          <div class="tags" style="margin-top:18px">
+            <span class="tag">AI 智能体设计</span><span class="tag">知识库问答</span><span class="tag">自动化工作流</span><span class="tag">个人品牌官网</span>
+          </div>
+        </article>
+        <aside class="card side">
+          <div class="panel">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px">
+              <div><strong>Agent Status</strong><div class="muted" style="margin-top:6px">实时响应 · 支持定制</div></div>
+              <div class="status">Online</div>
+            </div>
+            <div class="stat-list">
+              <div class="stat"><strong>24/7</strong><span>全天候响应</span></div>
+              <div class="stat"><strong>10+</strong><span>可接入平台</span></div>
+              <div class="stat"><strong>1v1</strong><span>定制方案</span></div>
+              <div class="stat"><strong>∞</strong><span>持续扩展</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <strong>适用场景</strong>
+            <ul class="list">
+              <li>官网 AI 助手展示页</li>
+              <li>个人 AI 名片与作品主页</li>
+              <li>智能客服与知识库入口</li>
+              <li>自动化服务销售落地页</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head"><h2>关于我</h2><p class="muted">一个适合展示 AI 智能体价值、能力和交付方式的主页模板。</p></div>
+        <div class="grid3">
+          <article class="card box"><div class="icon">01</div><h3>智能对话</h3><p>支持需求收集、自动问答、服务介绍与咨询分流，让访客更快理解你的业务。</p></article>
+          <article class="card box"><div class="icon">02</div><h3>任务执行</h3><p>不仅能聊天，还能连接工作流、知识库与业务系统，把咨询变成行动。</p></article>
+          <article class="card box"><div class="icon">03</div><h3>品牌展示</h3><p>用现代视觉风格完整表达你的 AI 身份、方法论、案例成果与联系方式。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ability">
+      <div class="container">
+        <div class="section-head"><h2>核心能力</h2><p class="muted">可根据你的业务，替换为真实服务模块。</p></div>
+        <div class="grid4">
+          <article class="card box"><div class="icon">⚙</div><h3>自动化工作流</h3><p>打通表单、通知、文档生成、数据整理等高频流程。</p></article>
+          <article class="card box"><div class="icon">🧠</div><h3>知识库问答</h3><p>对接产品文档、制度手册、FAQ，形成可用的业务问答系统。</p></article>
+          <article class="card box"><div class="icon">✍</div><h3>内容生产</h3><p>生成文案、邮件、脚本、产品介绍和营销素材。</p></article>
+          <article class="card box"><div class="icon">📊</div><h3>数据洞察</h3><p>协助总结信息、整理结构、输出复盘与策略建议。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section-head"><h2>项目案例</h2><p class="muted">你可以在这里放真实客户案例、作品集或产品模块。</p></div>
+        <div class="grid3">
+          <article class="card box"><div class="case-top"><h3>AI 客服智能体</h3><span class="badge">企业服务</span></div><p>为官网和私域提供 7×24 小时自动答疑，并自动收集销售线索。</p></article>
+          <article class="card box"><div class="case-top"><h3>知识库助手</h3><span class="badge">内部效率</span></div><p>连接业务文档和项目资料，帮助团队快速检索、理解并复用信息。</p></article>
+          <article class="card box"><div class="case-top"><h3>个人 IP 智能主页</h3><span class="badge">品牌展示</span></div><p>为个人创作者、顾问和开发者打造可展示、可转化的 AI 名片页。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download">
+      <div class="container">
+        <div class="section-head"><h2>应用下载</h2><p class="muted">支持 PC、Android、iOS 多端下载。你可以把下面按钮替换成真实安装包链接、应用商店链接或网盘地址。</p></div>
+        <div class="grid3">
+          <article class="card box">
+            <div class="icon">💻</div>
+            <h3>PC 版</h3>
+            <p>适用于 Windows / 桌面办公场景，支持更完整的智能体能力与高效操作体验。</p>
+            <div class="tags"><span class="tag">Windows</span><span class="tag">桌面端</span><span class="tag">完整功能</span></div>
+            <div class="actions"><a class="btn btn-primary" href="#">立即下载 PC 版</a></div>
+          </article>
+          <article class="card box">
+            <div class="icon">🤖</div>
+            <h3>Android 版</h3>
+            <p>适合移动办公和随时调用智能体服务，可用于客户沟通、内容生成和任务处理。</p>
+            <div class="tags"><span class="tag">Android</span><span class="tag">移动端</span><span class="tag">便捷使用</span></div>
+            <div class="actions"><a class="btn btn-primary" href="#">下载 Android APK</a></div>
+          </article>
+          <article class="card box">
+            <div class="icon"></div>
+            <h3>iOS 版</h3>
+            <p>适用于 iPhone / iPad，带来更轻量流畅的 AI 智能体使用体验，适合高频移动场景。</p>
+            <div class="tags"><span class="tag">iOS</span><span class="tag">App Store</span><span class="tag">轻量体验</span></div>
+            <div class="actions"><a class="btn btn-primary" href="#">前往下载 iOS 版</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="flow">
+      <div class="container">
+        <div class="section-head"><h2>合作流程</h2><p class="muted">用更清晰的步骤，帮助用户知道如何与你开始合作。</p></div>
+        <div class="grid2">
+          <article class="card box"><div class="icon">①</div><h3>需求沟通</h3><p>明确目标用户、服务场景、功能诉求和你希望呈现的品牌风格。</p></article>
+          <article class="card box"><div class="icon">②</div><h3>方案设计</h3><p>规划页面结构、内容层级、视觉调性和 AI 智能体展示方式。</p></article>
+          <article class="card box"><div class="icon">③</div><h3>页面开发</h3><p>完成主页搭建、响应式适配，并按需接入表单、对话或知识库能力。</p></article>
+          <article class="card box"><div class="icon">④</div><h3>上线交付</h3><p>支持后续迭代，包括案例更新、模块扩展和智能体能力升级。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <article class="card box" style="background:linear-gradient(135deg,rgba(120,169,255,.15),rgba(122,240,210,.12))">
+          <div class="pill">Ready to build</div>
+          <h2 style="margin-top:18px">把你的 AI 智能体主页做成真正可展示、可转化的数字门面</h2>
+          <p>如果你已经有 AI 服务、数字分身、知识库或自动化能力，这个页面就是一个很好的起点。</p>
+          <div class="actions"><a class="btn btn-primary" href="mailto:hello@nova-agent.ai">发送邮件</a><a class="btn btn-secondary" href="#top">返回顶部</a></div>
+        </article>
+        <aside class="card box">
+          <h3>联系信息</h3>
+          <p><strong>邮箱：</strong>hello@nova-agent.ai</p>
+          <p><strong>微信 / 社媒：</strong>NovaAgentStudio</p>
+          <p><strong>服务方向：</strong>AI 智能体定制、个人主页设计、自动化搭建</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">© 2026 Nova Agent. 为 AI 智能体与个人品牌打造的现代主页模板。</div></footer>
+</body>
+</html>
